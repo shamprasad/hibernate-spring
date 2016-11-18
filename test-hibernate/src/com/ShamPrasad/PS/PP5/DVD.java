@@ -4,13 +4,17 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 import javax.persistence.Id;
+import javax.persistence.IdClass;
+import java.io.Serializable;
 @Entity
 @Table(name="PS_DVD", catalog="PS_PP5")
 
-public class DVD {
+@IdClass(DVD.class)
+public class DVD implements Serializable{
 
 	@Id
 	private String title;
+	@Id
 	private int year ;
 	
 	public DVD(){
