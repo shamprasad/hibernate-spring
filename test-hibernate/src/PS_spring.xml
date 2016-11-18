@@ -1,0 +1,11 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+ 
+	<bean id="Book" class="com.ShamPrasad.PS.PP5.Book">
+		<property name="title" value="Sham Prasad"></property>
+		<property name="author" value="PS"></property>
+	</bean>
+ 
+</beans>
