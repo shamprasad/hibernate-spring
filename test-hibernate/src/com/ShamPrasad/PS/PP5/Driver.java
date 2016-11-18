@@ -17,13 +17,17 @@ public class Driver {
 		 book = new Book("game of throne","George");
 		 session.save(book); 
 		 book = new Book("book thief","someone");
-		 session.save(book); 	
+		 session.save(book); 
+		 book = new Book("book thief","someone123");
+		 session.save(book);
 		 
 		 DVD dvd = new DVD("Dare to go Solo", 2000);
 		 session.save(dvd);
 		 dvd = new DVD("Intro to Programming", 2011);
 		 session.save(dvd);
-		 dvd = new DVD("Dare to go Solo 2", 2006);
+		 dvd = new DVD("Intro to Programming", 2015);
+		 session.save(dvd);
+		 dvd = new DVD("Dare to go Solo", 2006);
 		 session.save(dvd);
 		 dvd = new DVD("lord of rings",2003);
 		 session.save(dvd);
